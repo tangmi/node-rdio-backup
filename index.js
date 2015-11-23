@@ -45,6 +45,7 @@ const app = express()
 		}, function(err, response) {
 			if (err) {
 				if (err.statusCode == 401) {
+					// we're not authorized yet
 					return res.redirect('/auth');
 				} else {
 					return res.send(err);
