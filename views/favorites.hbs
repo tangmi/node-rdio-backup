@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>your faves</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<p>here's your faves</p>
+
+	<table cellspacing="0" cellpadding="5">
+		<thead>
+			<tr>
+				<td></td>
+				<td width="500">track</td>
+				<td width="400">album</td>
+				<td width="250">artist</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each tracks}}
+			<tr>
+				<td class="icon">
+					<img src="{{icon}}" alt="{{name}} Icon" width="32" height="32">
+				</td>
+				<td>
+					{{name}}
+				</td>
+				<td>
+					{{album}}
+				</td>
+				<td>
+					{{artist}}
+				</td>
+			</tr>
+			{{/each}}
+
+			{{#each albums}}
+			<tr>
+				<td class="icon">
+					<img src="{{icon}}" alt="{{name}} Icon" width="64" height="64">
+				</td>
+				<td class="dimmed">
+					({{length}} songs)
+				</td>
+				<td>
+					{{name}}
+				</td>
+				<td>
+					{{artist}}
+				</td>
+			</tr>
+			{{/each}}
+
+			{{#each artists}}
+			<tr>
+				<td class="icon">
+					<img src="{{icon}}" alt="{{name}} Icon" width="64" height="64">
+				</td>
+				<td>
+					
+				</td>
+				<td>
+
+				</td>
+				<td>
+					{{name}}
+				</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</body>
+</html>

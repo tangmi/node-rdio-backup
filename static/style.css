@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+thead {
+	font-weight: bold;
+}
+
+td.icon {
+	text-align: center;
+}
+
+td.dimmed {
+	color: gray;
+	font-size: 0.88em;
+}
+
+tr > td {
+	margin: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+tbody > tr:hover > td {
+	background-color: rgba(0, 0, 0, 0.05);
+}
